@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | Quiz Form</title>
+    <meta name="description" content="Nefi Serrano. WDD130. A quiz assignment.">
+    <meta name="author" content="Nefi Raúl Serrano Ramírez">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <header>
+        <h1>HTML and CSS Quiz</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <label for="q1">In HTML some elements have no content (for example an image element) and are called:</label>
+                <input type="text" id="q1" name="q1">
+            </fieldset>
+            <fieldset>
+                <label for="q2">What is the CSS language used for?</label>
+                <textarea id="q2" name="q2" rows="4" placeholder="Your answer"></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="q3">Which of the following CSS layouts lets you lay content out in rows and columns?</label>
+                <select id="q3" name="q3">
+                    <option value="" selected disabled>Choose One...</option>
+                    <option value="Float">Float</option>
+                    <option value="Position">Position</option>
+                    <option value="Flex">Flex</option>
+                    <option value="Grid">Grid</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="q4">How wide in pixels is an element where the content is 100 pixels, the border is defined to be 1 pixel all around, and the padding and margin are set to be 10 pixels all around? (Type just the number)</label>
+                <input type="number" id="q4" name="q4">
+            </fieldset>
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+    <footer>
+        <p>©2023 | HTML Quiz - HTML and CSS | Nefi Raul Serrano Ramirez</p>
+    </footer>
+</body>
+</html>
