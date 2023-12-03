@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300&display=swap");
+
+:root {
+    --primary-color: #0077b6;
+    --secondary-color: #03045e;
+    --accent1-color: #00b4d8;
+    --accent2-color: #90e0ef;
+    --accent3-color: #caf0f8;
+
+    --heading-font: "Montserrat", serif;
+    --paragraph-font: "Open Sans", serif;
+
+    --nav-background-color: #0077b6;
+    --nav-link-color: #caf0f8;
+    --nav-hover-link-color: #90e0ef;
+    --nav-hover-background-color: #03045e;
+}
+
+header {
+    display: grid;
+	align-items: center;
+    background-color: var(--nav-background-color);
+}
+
+header nav {
+    grid-column: 2/3;
+}
+
+header img {
+    padding: 10px;
+}
+
+.navigation {
+	display: flex;
+	list-style: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 20px;
+	text-decoration: none;
+    color: var(--nav-link-color);
+    font-family: var(--paragraph-font);
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.navigation a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 10000px;
+    padding: 20px;
+}
+
+.history {
+    display: grid;
+    background-color: var(--accent1-color);
+}
+
+.history h2 {
+    grid-column: 2/3;
+}
+
+.history img {
+    width: 400px;
+    height: auto;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.first {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    padding: 20px;
+    font-family: var(--paragraph-font);
+}
+
+.second {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    padding: 20px;
+    font-family: var(--paragraph-font);
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    width: 1295px;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 1px;
+    left: 600px;
+    background-color: var(--accent1-color);
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+}
+
+.hero article {
+    position: absolute;
+    background: var(--accent3-color);
+    top: 500px;
+    left: 250px;
+    width: 800px;
+    opacity: 0.8;
+}
+
+.hero article img {
+    float: right;
+    width: 250px;
+    height: auto;
+    padding: 1rem;
+}
+
+.hero article p {
+    padding: 10px;
+    font-family: var(--paragraph-font);
+}
+
+.rafting {
+    background-color: var(--accent2-color);
+}
+
+.rafting h2 {
+    margin: 0%;
+    padding: 30px;
+}
+
+.adventure {
+    display: flex;
+    margin: 0 -5px;
+}
+
+.adventure figure {
+    margin: 0 32px;
+}
+
+.adventure img {
+    width: 200px;
+    height: auto;
+}
+
+.start {
+    background-color: var(--accent3-color);
+}
+
+.start h1 {
+    margin: 0;
+    padding: 45px;
+}
+
+.start p {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.info {
+    background-color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.data {
+    grid-column: 1/2;
+}
+
+.map {
+    grid-column: 2/2;
+}
+
+.info h2 {
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.info h3, p {
+    text-align: center;
+}
+
+.employees {
+    background-color: var(--accent1-color);
+}
+
+.employees h2 {
+    margin: 0;
+    padding: 45px;
+}
+
+.employees div {
+    display: flex;
+}
+
+.employees img {
+    width: 350px;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.form {
+    background-color: var(--accent3-color);
+    padding: 45px;
+}
+
+.form h2 {
+    margin: 0;
+    padding: 45px;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: none;
+    padding: 1rem;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+legend {
+    padding-bottom: 10px;
+}
+
+input[type="radio"] {
+    width: 22px;
+    height: 22px;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+}
+
+button {
+    margin: 1rem;
+    background-color: var(--accent1-color);
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+
+footer p {
+    margin-right: 50px;
+    align-self: center;
+    font-size: 25px;
+    font-family: var(--paragraph-font);
+}
+
+footer img {
+    width: 80px;
+    height: auto;
+}
+
+.wireframe {
+    color: var(--accent3-color);
+    font-size: 25px;
+    margin-top: 24px;
+    padding-right: 20px;
+}
